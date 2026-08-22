@@ -1,13 +1,9 @@
 package com.automotive.marketplace.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.automotive.marketplace.entity.VehicleListing;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface VehicleListingRepository {
-    VehicleListing save(VehicleListing entity);
-    Optional<VehicleListing> findById(String id);
-    List<VehicleListing> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface VehicleListingRepository extends JpaRepository<VehicleListing, String> {
 }

@@ -1,13 +1,9 @@
 package com.automotive.marketplace.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.automotive.marketplace.entity.InspectionReport;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface InspectionReportRepository {
-    InspectionReport save(InspectionReport entity);
-    Optional<InspectionReport> findById(String id);
-    List<InspectionReport> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface InspectionReportRepository extends JpaRepository<InspectionReport, String> {
 }

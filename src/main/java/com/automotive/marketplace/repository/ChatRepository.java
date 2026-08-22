@@ -1,13 +1,9 @@
 package com.automotive.marketplace.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.automotive.marketplace.entity.Chat;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ChatRepository {
-    Chat save(Chat entity);
-    Optional<Chat> findById(String id);
-    List<Chat> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface ChatRepository extends JpaRepository<Chat, String> {
 }

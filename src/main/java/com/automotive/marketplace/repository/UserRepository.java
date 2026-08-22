@@ -1,13 +1,9 @@
 package com.automotive.marketplace.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.automotive.marketplace.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository {
-    User save(User entity);
-    Optional<User> findById(String id);
-    List<User> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface UserRepository extends JpaRepository<User, String> {
 }

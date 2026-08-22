@@ -1,13 +1,9 @@
 package com.automotive.marketplace.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.automotive.marketplace.entity.Offer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface OfferRepository {
-    Offer save(Offer entity);
-    Optional<Offer> findById(String id);
-    List<Offer> findAll();
-    void deleteById(String id);
-    boolean existsById(String id);
-    long count();
+@Repository
+public interface OfferRepository extends JpaRepository<Offer, String> {
 }
