@@ -1,4 +1,4 @@
-package Entity;
+
 class Vehicle{
     private String vehicleId;
     private String VIN;

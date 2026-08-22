@@ -1,6 +1,5 @@
-package Entity;
-
 public class Payment {
+
     
 private String paymentId;
 private String orderId;
@@ -10,11 +9,12 @@ private String transactionRef;
 private PaymentStatus status; // Initiated/Success/Failed/Refunded
 private java.time.LocalDateTime paidAt;
 
-}
 
-enum PaymentStatus {
+    public static enum PaymentStatus {
+
     INITIATED,
     SUCCESS,
     FAILED,
     REFUNDED
+    }
 }

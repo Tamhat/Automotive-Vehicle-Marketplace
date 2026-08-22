@@ -1,4 +1,4 @@
-package Entity;
+
 
 enum InspectionReportState {
     SCHEDULED,

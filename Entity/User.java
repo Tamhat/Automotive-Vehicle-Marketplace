@@ -1,5 +1,5 @@
-package Entity;
-public class User {    
+public class User {
+    
 private String userId;
 private String name;
 private String email;
@@ -14,13 +14,14 @@ private String kycStatus;
 private double rating; // average rating
 // private String dealershipId; // nullable, dealer hole
 private java.time.LocalDateTime createdAt;
-}
 
-enum UserRole {
+    public static enum UserRole {
+
     BUYER,
     SELLER,
     DEALER,
     ADMIN,
     INSPECTOR,
     DELIVERY_AGENT
+    }
 }

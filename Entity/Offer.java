@@ -1,6 +1,5 @@
-package Entity;
-
 public class Offer {
+
     private String offerId;
     private String listingId;
     private String buyerId;
@@ -11,13 +10,14 @@ public class Offer {
     private java.time.LocalDateTime createdAt;
     private java.time.LocalDateTime expiresAt;
 
-}
 
-enum OfferStatus {
+    public static enum OfferStatus {
+
     PENDING,
     COUNTERED,
     ACCEPTED,
     REJECTED,
     EXPIRED,
     WITHDRAWN
+    }
 }

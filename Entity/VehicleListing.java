@@ -1,6 +1,5 @@
-package Entity;
-
 public class VehicleListing {
+
     
 private String listingId;
 private String sellerId;
@@ -16,9 +15,9 @@ private java.time.LocalDateTime postedAt;
 private java.time.LocalDateTime expiresAt;
 
 
-}
 
-enum ListingStatus {
+    public static enum ListingStatus {
+
     DRAFT,
     PENDING_APPROVAL,
     ACTIVE,
@@ -26,4 +25,5 @@ enum ListingStatus {
     SOLD,
     EXPIRED,
     REMOVED
+    }
 }
