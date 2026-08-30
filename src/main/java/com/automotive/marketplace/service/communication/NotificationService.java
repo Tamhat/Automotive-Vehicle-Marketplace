@@ -1,4 +1,4 @@
-package com.automotive.marketplace.service;
+package com.automotive.marketplace.service.communication;
 
 
 
@@ -14,8 +14,8 @@ public class NotificationService {
  * - 
  */
     
-public void sendNotification() {};   //      → System
+public void sendNotification() {};     //      → System
 public void markAsRead()  {};         //      → All Users
-public void deleteNotification() {};      //      → All Users
+public void deleteNotification() {}; //      → All Users
 
 }
